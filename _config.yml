@@ -1,0 +1,16 @@
+title: Fedor Korol
+description: Generative AI Engineer — Portfolio
+url: ""
+baseurl: ""
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+exclude:
+  - CASE_STUDIES_PLAN.md
+  - JOB_SEARCH_PLAN.md
+  - Profile.pdf
+  - Fedor_Korol_Resume.md
+  - bp-pics/
+  - README.md
