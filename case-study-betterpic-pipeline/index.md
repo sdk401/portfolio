@@ -65,7 +65,7 @@ LoRA training on FLUX (per-user face model)
     ↓
 ComfyUI generation pipeline
   ├── FLUX.1-dev base generation with user LoRA
-  ├── Automatic detail refinement (eyes, skin, hair)
+  ├── Automatic detail refinement
   ├── Configurable face inpainting
   ├── 4K upscaling with identity preservation
   └── Post-processing & quality checks
@@ -82,8 +82,9 @@ Built a custom LoRA training infrastructure for per-user face models on FLUX. Th
 - FLUX in-house: consistently **99.99 — 100.00** (we had to increase measurement precision because the old scale topped out)
 
 ### Generation Pipeline
+<a href="img/workflow.png" target="_blank"><img src="img/workflow.png" alt="ComfyUI generation workflow"></a>
 
-The ComfyUI-based inference pipeline chains multiple stages: base generation with FLUX.1-dev, automatic refinement of important details (eyes, skin, hair), configurable face inpainting for fine-tuned likeness control, and 4K upscaling with identity preservation. Each stage is modular — I can swap models, adjust parameters, or add new processing steps without rebuilding the whole pipeline.
+The ComfyUI-based inference pipeline chains multiple stages: base generation with FLUX.1-dev, automatic refinement of important details, configurable face inpainting for fine-tuned likeness control, and 4K upscaling with identity preservation. Each stage is modular — I can swap models, adjust parameters, or add new processing steps without rebuilding the whole pipeline.
 
 ### Custom Tooling
 
