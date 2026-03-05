@@ -24,11 +24,26 @@ nav {
   max-width: 760px;
   margin: 0 auto;
   padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .nav-name {
   font-weight: 700;
   font-size: 1.1rem;
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.nav-resume {
+  color: #555;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.nav-resume:hover {
   color: #1a1a1a;
   text-decoration: none;
 }
