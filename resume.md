@@ -20,13 +20,15 @@ Generative AI engineer with hands-on experience building production image and vi
 
 ## Technical Skills
 
-**Generative AI:** Diffusion models (FLUX.1, FLUX.2, Stable Diffusion), LoRA fine-tuning, WAN video generation, Qwen Image, ControlNets, image upscaling, inpainting/outpainting
-**Computer Vision:** Vision-language models, image segmentation, object detection, face analysis
-**Tools & Frameworks:** ComfyUI (workflow design + custom node development), PyTorch, Hugging Face Diffusers, Accelerate
-**Languages:** Python, JavaScript/TypeScript
-**Infrastructure:** GPU pipeline orchestration, model optimization, batch processing
-**Design:** Figma, design systems, wireframing, high-fidelity prototyping
-**Languages spoken:** English (fluent), Russian (native)
+| | |
+|---|---|
+| **Generative AI** | Diffusion models (FLUX.1, FLUX.2, Stable Diffusion), LoRA fine-tuning, WAN video generation, Qwen Image, ControlNets, image upscaling, inpainting/outpainting |
+| **Computer Vision** | Vision-language models, image segmentation, object detection, face analysis |
+| **Tools & Frameworks** | ComfyUI (workflow design + custom node development), PyTorch, Hugging Face Diffusers, Accelerate |
+| **Languages** | Python, JavaScript/TypeScript |
+| **Infrastructure** | GPU pipeline orchestration, model optimization, batch processing |
+| **Design** | Figma, design systems, wireframing, high-fidelity prototyping |
+| **Languages spoken** | English (fluent), Russian (native) |
 
 ---
 
