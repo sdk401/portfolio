@@ -16,16 +16,16 @@ Currently based in Spain, working remotely.
 
 ## Case Studies
 
-<div class="case-study-card" markdown="1">
-<a href="{{ '/case-study-betterpic-pipeline/' | relative_url }}">
-
-### From External API to In-House FLUX Pipeline
+**[From External API to In-House FLUX Pipeline]({{ '/case-study-betterpic-pipeline/' | relative_url }})**
 Rebuilt BetterPic's entire AI stack — migrated from an external SD 1.5 API to an in-house FLUX pipeline on ComfyUI. NPS up 41%, orders up 5.6x, AI cost down 3x.
 
-</a>
-</div>
-
 *More case studies coming soon.*
+
+---
+
+## Resume
+
+[View my full resume →]({{ '/resume' | relative_url }})
 
 ---
 

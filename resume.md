@@ -6,7 +6,7 @@ title: Resume
 # Fedor Korol
 
 **Generative AI Engineer**
-L'Hospitalet de Llobregat, Spain | Remote
+Spain | Remote
 
 fedor.korol@gmail.com | [linkedin.com/in/fedor-korol](https://www.linkedin.com/in/fedor-korol) | [github.com/sdk401](https://github.com/sdk401)
 
@@ -45,7 +45,6 @@ Built and maintained the core AI backend powering BetterPic (AI headshot generat
 - Engineered upscaling and detail enhancement workflows achieving high subject resemblance at 4K output resolution
 - Identified and resolved pipeline bottlenecks, improving generation quality and throughput
 - Designed and evaluated image quality through a trained photographic eye — composition, lighting, skin tones, and detail
-- Additionally handled UX/UI design for the web application and maintained brand identity
 
 ---
 

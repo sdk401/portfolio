@@ -24,9 +24,6 @@ nav {
   max-width: 760px;
   margin: 0 auto;
   padding: 1rem 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .nav-name {
@@ -34,22 +31,6 @@ nav {
   font-size: 1.1rem;
   color: #1a1a1a;
   text-decoration: none;
-}
-
-.nav-links {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.nav-links a {
-  color: #555;
-  text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
-.nav-links a:hover {
-  color: #1a1a1a;
 }
 
 main {
@@ -230,41 +211,10 @@ blockquote {
   margin-bottom: 2rem;
 }
 
-.case-study-card {
-  border: 1px solid #e5e5e5;
-  border-radius: 8px;
-  padding: 1.25rem 1.5rem;
-  margin: 1rem 0;
-  background: #fff;
-  transition: border-color 0.15s;
-}
-
-.case-study-card:hover {
-  border-color: #bbb;
-}
-
-.case-study-card h3 {
-  margin-top: 0;
-  margin-bottom: 0.35rem;
-}
-
-.case-study-card p {
-  margin-bottom: 0;
-  color: #555;
-  font-size: 0.95rem;
-}
-
-.case-study-card a {
-  text-decoration: none;
-  color: inherit;
-}
-
 /* Responsive */
 @media (max-width: 600px) {
   h1 { font-size: 1.6rem; }
   h2 { font-size: 1.2rem; }
-  nav { flex-direction: column; gap: 0.5rem; }
-  .nav-links { gap: 1rem; }
   table { font-size: 0.85rem; }
   th, td { padding: 0.4rem 0.6rem; }
 }
