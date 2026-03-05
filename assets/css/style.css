@@ -172,11 +172,15 @@ tr:last-child td {
 }
 
 /* Images */
+a > img {
+  cursor: pointer;
+}
 img {
   max-width: 100%;
   height: auto;
   border-radius: 6px;
   margin: 1rem 0;
+  cursor: default;
 }
 
 /* Captions (italic text after images) */
