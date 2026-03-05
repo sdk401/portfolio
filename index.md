@@ -10,8 +10,6 @@ Generative AI Engineer — building image and video generation pipelines.
 
 ---
 
-## Summary
-
 I build production AI systems for image and video generation — LoRA training, ComfyUI workflow design, diffusion model integration, and quality optimization. Previously spent 15 years in UX/product design, which gives me an unusual ability to bridge AI capabilities with real user needs and a trained eye for visual quality.
 
 ---
