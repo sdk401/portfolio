@@ -35,7 +35,7 @@ Generative AI engineer with hands-on experience building production image and vi
 ## Experience
 
 ### BetterPic / BetterStudio — Founding AI Engineer
-*September 2024 — Present | Remote*
+*September 2024 — February 2026 (1 year 6 months) | Remote*
 
 Built and maintained the core AI backend powering BetterPic (AI headshot generation) and BetterStudio (AI fashion photography) from the ground up as the founding AI engineer.
 
