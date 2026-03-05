@@ -18,13 +18,16 @@ body {
 header {
   border-bottom: 1px solid #e5e5e5;
   background: #fff;
+  width: 100%;
 }
 
 nav {
+  width: 100%;
   max-width: 760px;
   margin: 0 auto;
   padding: 1rem 1.5rem;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
@@ -36,7 +39,12 @@ nav {
   text-decoration: none;
 }
 
+.nav-name:hover {
+  text-decoration: none;
+}
+
 .nav-resume {
+  margin-left: auto;
   color: #555;
   text-decoration: none;
   font-size: 0.9rem;
