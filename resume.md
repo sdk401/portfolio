@@ -5,7 +5,7 @@ title: Resume
 
 # Fedor Korol
 
-**Generative AI Engineer**
+**Generative AI Engineer**<br>
 *Spain | Remote*
 
 - [fedor.korol@gmail.com](mailto:fedor.korol@gmail.com)
