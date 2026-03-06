@@ -21,6 +21,7 @@ Generative AI engineer with hands-on experience building production image and vi
 ---
 
 ## Technical Skills
+
 | | |
 |---|---|
 | **Generative AI** | Diffusion models (FLUX.1, FLUX.2, Stable Diffusion), LoRA fine-tuning, WAN video generation, Qwen Image, ControlNets, image upscaling, inpainting/outpainting |
