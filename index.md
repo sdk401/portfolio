@@ -27,10 +27,10 @@ I build production AI systems for image and video generation — LoRA training, 
 ## Portfolio
 
 **[From External API to In-House FLUX Pipeline]({{ '/case-study-betterpic-pipeline/' | relative_url }})**
-Rebuilt BetterPic's entire AI stack — migrated from an external SD 1.5 API to an in-house FLUX pipeline on ComfyUI. NPS up 41%, orders up 5.6x, AI cost down 3x.
+<br>Rebuilt BetterPic's entire AI stack — migrated from an external SD 1.5 API to an in-house FLUX pipeline on ComfyUI. NPS up 41%, orders up 5.6x, AI cost down 3x.
 
 **[AI-Powered Image Editing Workflows]({{ '/case-study-betterpic-editing/' | relative_url }})**
-Built a suite of mask-based editing tools — background replacement, clothes swap, magic fix, magic eraser, outpainting — preserving image quality across multiple edits.
+<br>Built a suite of mask-based editing tools — background replacement, clothes swap, magic fix, magic eraser, outpainting — preserving image quality across multiple edits.
 
 ---
 
