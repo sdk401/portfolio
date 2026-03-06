@@ -54,29 +54,25 @@ User selects a background style from a curated set. We automatically segment the
 
 Same mask-based approach applied to clothing. User picks a style, we load the corresponding prompt template, segment the clothing area while preserving face and skin, and generate new clothing that matches the body pose and lighting. Identity and facial features are fully preserved.
 
-<!-- IMAGE: clothes_replacement.png -->
-<!-- Caption: Clothes replacement — same person, different outfits -->
+<a href="img/clothes_replace.png" target="_blank"><img src="img/clothes_replace.png" alt="Clothes replacement example"></a>
 
 ### Magic Fix
 
 The most flexible tool. User draws a freehand mask directly in the browser interface and provides a text prompt describing what they want. We run inference constrained to that mask according to the prompt. This handles edge cases that no pre-built workflow can anticipate — fixing a stray hair, adjusting a collar, changing an accessory.
 
-<!-- IMAGE: magic_fix.png -->
-<!-- Caption: Magic Fix — user-drawn mask with custom prompt -->
+<a href="img/magic_fix.png" target="_blank"><img src="img/magic_fix.png" alt="Magic Fix example"></a>
 
 ### Magic Eraser
 
 User masks an unwanted object — a background distraction, an artifact, an accessory they don't want. We remove it and fill the area seamlessly, matching the surrounding context. Similar to commercial "remove object" tools, but integrated into the headshot pipeline with full context awareness.
 
-<!-- IMAGE: magic_eraser.png -->
-<!-- Caption: Magic Eraser — object removal with seamless fill -->
+<a href="img/magic_eraser.png" target="_blank"><img src="img/magic_eraser.png" alt="Magic Eraser example"></a>
 
 ### Expand
 
 User specifies new image boundaries beyond the original frame — extending a tight headshot into a wider composition, or adding space above for a different crop. We generate content that seamlessly joins with the original image edges (outpainting), maintaining consistent lighting, style, and background.
 
-<!-- IMAGE: expand.png -->
-<!-- Caption: Expand — extending the frame with generated content -->
+<a href="img/expand.png" target="_blank"><img src="img/expand.png" alt="Expand example"></a>
 
 ### Additional Adjustments
 
