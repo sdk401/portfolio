@@ -43,6 +43,8 @@ The pipeline combines multiple model types: **segmentation and detection models*
 
 This matters because images **don't degrade over multiple edits**. A user can change the background, then adjust the clothes, then fix a detail — and the face, skin, and hair remain pixel-perfect throughout. With full-image resampling, each edit would compound artifacts and drift from the original likeness.
 
+Critically, the entire process is **fully automated end-to-end**. The user provides their input — selects a style, draws a mask, or sets new boundaries — and the platform orchestrates the backend calls. ComfyUI workflows handle all the AI processing — segmentation, masking, inference, compositing — and the user receives the finished result. No manual intervention, no human-in-the-loop editing, no post-processing by hand.
+
 <a href="img/masked_editing.png" target="_blank"><img src="img/masked_editing.png" alt="Masking principle — only the targeted region is resampled"></a>
 
 ---
