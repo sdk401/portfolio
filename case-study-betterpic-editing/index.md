@@ -17,6 +17,8 @@ Our new FLUX-based generation pipeline produced great headshots. But users aren'
 
 What we needed was **targeted editing**: change only what the user wants changed, and leave everything else untouched.
 
+It's worth noting that at the time we built these workflows, the dedicated AI editing models that exist today — both open-source and closed-source — had not been introduced yet. There was no off-the-shelf solution we could plug in. We had to engineer the entire editing pipeline from scratch, combining segmentation, detection, ControlNets, and inpainting into custom ComfyUI workflows.
+
 ---
 
 ## The Core Approach: Mask-Based Editing
@@ -26,7 +28,9 @@ Every editing workflow we built follows the same principle:
 ```
 Original image
     ↓
-Segmentation / masking (isolate the edit region)
+Segmentation / detection (isolate the edit region)
+    ↓
+ControlNets (preserve structure, pose, and composition)
     ↓
 AI inference (constrained to the masked area only)
     ↓
@@ -34,6 +38,8 @@ Composite (edited region blended back into original)
     ↓
 Final image (unedited pixels are byte-identical to original)
 ```
+
+The pipeline combines multiple model types: **segmentation and detection models** to precisely identify regions of interest (faces, clothing, backgrounds, objects), **ControlNets** to maintain structural consistency and guide the generation toward the right pose, edges, and composition, and **FLUX inpainting** to generate new content within the masked area.
 
 This matters because images **don't degrade over multiple edits**. A user can change the background, then adjust the clothes, then fix a detail — and the face, skin, and hair remain pixel-perfect throughout. With full-image resampling, each edit would compound artifacts and drift from the original likeness.
 
@@ -52,7 +58,7 @@ User selects a background style from a curated set. We automatically segment the
 
 ### Clothes Replacement
 
-Same mask-based approach applied to clothing. User picks a style, we load the corresponding prompt template, segment the clothing area while preserving face and skin, and generate new clothing that matches the body pose and lighting. Identity and facial features are fully preserved.
+Same mask-based approach applied to clothing. User picks a style, we load the corresponding prompt template, segment the clothing area while preserving face and skin, and generate new clothing that matches the body pose and lighting. ControlNets ensure the new clothing follows the original body pose and proportions. Identity and facial features are fully preserved.
 
 <a href="img/clothes_replace.png" target="_blank"><img src="img/clothes_replace.png" alt="Clothes replacement example"></a>
 
@@ -99,12 +105,13 @@ These workflows turned what would be manual per-image editing into a fully autom
 
 Every workflow in this suite — from simple skin smoothing to complex B2B batch processing — follows the same architectural pattern:
 
-1. **Segment** — identify the region of interest using segmentation models
+1. **Segment & detect** — identify the region of interest using segmentation and detection models
 2. **Mask** — create a precise boundary between "edit this" and "don't touch this"
-3. **Generate** — run inference constrained to the masked area
-4. **Composite** — blend the result back, ensuring seamless transitions
+3. **Guide** — use ControlNets to preserve structure, pose, and spatial composition
+4. **Generate** — run inference constrained to the masked area
+5. **Composite** — blend the result back, ensuring seamless transitions
 
-This decomposition made each new workflow faster to build. Once the masking and compositing infrastructure was solid, adding a new editing capability was primarily about defining the right segmentation target and prompt template — not rebuilding the pipeline from scratch.
+This decomposition made each new workflow faster to build. Once the masking, ControlNet guidance, and compositing infrastructure was solid, adding a new editing capability was primarily about defining the right segmentation target and prompt template — not rebuilding the pipeline from scratch.
 
 The design and photography background was critical here: knowing what makes an edit look natural — consistent lighting, proper color temperature, realistic shadows, natural fabric folds — informed every workflow's quality targets and evaluation criteria.
 
@@ -112,4 +119,4 @@ The design and photography background was critical here: knowing what makes an e
 
 ## Tech Stack
 
-`FLUX.1-dev` `ComfyUI` `Segmentation` `Inpainting` `Outpainting` `Custom ComfyUI Nodes` `Python`
+`FLUX.1-dev` `ComfyUI` `ControlNet` `Segmentation` `Detection` `Inpainting` `Outpainting` `Custom ComfyUI Nodes` `Python`
