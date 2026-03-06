@@ -6,9 +6,12 @@ title: Resume
 # Fedor Korol
 
 **Generative AI Engineer**
-Spain | Remote
+*Spain | Remote*
+{: .subtitle}
 
-fedor.korol@gmail.com | [linkedin.com/in/fedor-korol](https://www.linkedin.com/in/fedor-korol) | [github.com/sdk401](https://github.com/sdk401)
+- [fedor.korol@gmail.com](mailto:fedor.korol@gmail.com)
+- [linkedin.com/in/fedor-korol](https://www.linkedin.com/in/fedor-korol)
+- [github.com/sdk401](https://github.com/sdk401)
 
 ---
 
