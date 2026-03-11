@@ -3,6 +3,8 @@ layout: default
 title: Resume
 ---
 
+<button class="print-btn" onclick="window.print()">Download PDF</button>
+
 # Fedor Korol
 
 **Generative AI Engineer**
