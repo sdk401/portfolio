@@ -32,6 +32,9 @@ I build production AI systems for image and video generation — LoRA training, 
 **[AI-Powered Image Editing Workflows]({{ '/case-study-betterpic-editing/' | relative_url }})**
 <br>Built a suite of mask-based editing tools — background replacement, clothes swap, magic fix, magic eraser, outpainting — preserving image quality across multiple edits.
 
+**[AI Virtual Try-On: Building a Fashion Photography Platform]({{ '/case-study-betterstudio-tryon/' | relative_url }})**
+<br>R&D project building an end-to-end AI virtual try-on pipeline for fashion brands — from CatVTON experiments to Gemini-backed commercial pilots. Honest account of what worked, what didn't, and why the project was shelved.
+
 ---
 
 ## Experience
