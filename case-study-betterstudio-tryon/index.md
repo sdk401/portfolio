@@ -25,9 +25,6 @@ When these three inputs are right, CatVTON produces genuinely impressive results
 <a href="img/catvton-pipeline.png" target="_blank"><img src="img/catvton-pipeline.png" alt="CatVTON approach — inputs and generation flow"></a>
 *How the CatVTON pipeline worked: pre-generated model poses with masks, paired with garment reference images*
 
-<a href="img/catvton_results.png" target="_blank"><img src="img/catvton_results.png" alt="CatVTON example results"></a>
-*CatVTON results — solid garment transfer quality when inputs were well-prepared*
-
 ### The constraint this created
 
 The model requires a **prepared source image** — not just any photo of a person, but one that matches the intended pose, framing, and body proportions, with a corresponding mask already generated for the clothing region. This means you can't compose freely at generation time. You have to pre-build a library of virtual model images in every pose you want to offer, generate precise segmentation masks for each, and store them all as paired assets before any try-on can happen.
@@ -57,12 +54,6 @@ The model handles the composition: placing the right face on the right body in t
 
 We developed a two-layer system: auto-generated captions (using VL models to extract structured descriptions of each input — garment attributes, pose description, background characteristics) combined with a manual JSON constructor that let operators define and lock specific generation parameters. The final prompt assembled all of these into a coherent, structured instruction.
 
-<a href="img/prompt_composition.png" target="_blank"><img src="img/prompt_composition.png" alt="Prompt composition diagram — from references and attributes to structured generation prompt"></a>
-*Structured prompt assembly: captions from reference images + operator-defined parameters → generation prompt*
-
-<a href="img/gemini_vs_flux2.png" target="_blank"><img src="img/gemini_vs_flux2.png" alt="Gemini vs FLUX.2 — comparison on the same inputs"></a>
-*Gemini 3 Pro Image vs FLUX.2 on the same inputs — by late 2025 the gap had narrowed significantly*
-
 ### Persistent challenges
 
 Three problems remained across both model backends:
@@ -79,7 +70,7 @@ The AI backend solved the generation problem. The harder problem was everything 
 
 Each of these was a real piece of work. As a team we built tooling to handle all of it — VL-based data ingestion, a look-composition interface, an operator parameter system, automated QC filtering, and a delivery layer.
 
-<a href="img/platform_looks.png" target="_blank"><img src="img/platform_looks.png" alt="Platform interface for look composition and management"></a>
+<a href="img/platform-screen.png" target="_blank"><img src="img/platform-screen.png" alt="Platform interface for look composition and management"></a>
 
 The scope of the platform was the primary reason the project was shelved in early 2026. The AI quality was there. The investment required to harden and scale the surrounding platform — against a market that wasn't yet fully ready to replace traditional photography with AI — wasn't justified at that moment.
 
