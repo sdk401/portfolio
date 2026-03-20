@@ -77,7 +77,7 @@ Delivered to user (60-100 images per order)
 
 Built a custom LoRA training infrastructure for per-user face models on FLUX. Through extensive parameter testing and optimization, I developed a versatile and robust workflow that trains a usable LoRA from just 8 face images — keeping training fast and cheap on compute while maintaining high identity fidelity. Each customer's uploaded photos are preprocessed, captioned, and used to train a lightweight LoRA that captures their facial identity. The move from SD 1.5 to FLUX LoRAs was a generational leap in identity preservation.
 
-**Similarity scores** (measured via AWS Rekognition):
+**Similarity scores** (measured via similarity model):
 - SD 1.5 API: averaging **98.50 — 99.50**
 - FLUX in-house: consistently **99.99 — 100.00** (we had to increase measurement precision because the old scale topped out)
 
@@ -106,7 +106,7 @@ Where existing ComfyUI nodes didn't meet our needs, I developed custom nodes —
 
 The quality jump was immediately visible — skin texture, eye realism, hair detail, clothing folds, background depth. This wasn't a subtle improvement, it was a different tier of output entirely.
 
-**Identity similarity (AWS Rekognition):**
+**Identity similarity:**
 
 | | SD 1.5 (External API) | FLUX (In-House) |
 |---|---|---|
@@ -159,5 +159,5 @@ Moving in-house cut the per-order AI cost to roughly a third of what the externa
 
 ## Tech Stack
 
-`FLUX.1-dev` `ComfyUI` `LoRA` `Python` `PyTorch`
-`AWS Rekognition` `Segmentation` `Face Detection` `Custom ComfyUI Nodes`
+`FLUX.1-dev` `ComfyUI` `LoRA` `Python` `PyTorch` 
+`Segmentation` `Face Detection` `Custom ComfyUI Nodes`
